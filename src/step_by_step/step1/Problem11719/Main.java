@@ -11,18 +11,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> inputs = new ArrayList<>();
 
-        boolean isBeforeEmpty = false;
-
         while(sc.hasNextLine()) {
             String input = sc.nextLine();
-            if (input.isEmpty()) {
-                if (isBeforeEmpty) {
-                    break;
-                } else {
-                    isBeforeEmpty = true;
-                }
-            } else {
-                isBeforeEmpty = false;
+            if (input.isEmpty() && inputs.get(inputs.size() - 1).isEmpty()) {
+                break;
             }
             inputs.add(input);
         }
