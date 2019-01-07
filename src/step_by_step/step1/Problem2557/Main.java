@@ -1,6 +1,6 @@
 // https://www.acmicpc.net/problem/2557
 
-package Problem1;
+package step_by_step.step1.Problem2557;
 
 
 public class Main {
